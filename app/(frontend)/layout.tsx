@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import "./globals.css";
 import { Providers } from "@/components/shared/providers";
+import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={geistSans.variable}>
+			<body className={cn(geistSans.variable)}>
 				<Providers>{children}</Providers>
 			</body>
 		</html>

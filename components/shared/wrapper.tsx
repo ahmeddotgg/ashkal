@@ -6,6 +6,6 @@ interface WrapperProps {
 	children: ReactNode;
 }
 
-export default function Wrapper({ children, className }: WrapperProps) {
+export function Wrapper({ children, className }: WrapperProps) {
 	return <div className={cn("container", className)}>{children}</div>;
 }

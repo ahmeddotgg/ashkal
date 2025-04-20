@@ -4,7 +4,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "../ui/button";
 
-export default function ThemeSwitcher() {
+export function ThemeSwitcher() {
 	const { setTheme, resolvedTheme } = useTheme();
 
 	return (
@@ -14,9 +14,10 @@ export default function ThemeSwitcher() {
 				resolvedTheme === "dark" ? setTheme("light") : setTheme("dark")
 			}
 			aria-label="Toggle theme"
+			className="rounded-sm"
 		>
-			<Sun className="size-5 rotate-0 dark:-rotate-90 scale-100 dark:scale-0 !transition-all" />
-			<Moon className="absolute size-5 rotate-90 dark:rotate-0 scale-0 dark:scale-100 !transition-all" />
+			<Sun className="rotate-0 dark:-rotate-90 scale-100 dark:scale-0 !transition-all" />
+			<Moon className="absolute rotate-90 dark:rotate-0 scale-0 dark:scale-100 !transition-all" />
 		</Button>
 	);
 }
