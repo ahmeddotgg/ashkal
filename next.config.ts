@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { withPayload } from "@payloadcms/next/withPayload";
 import type { NextConfig } from "next";
 
@@ -14,6 +15,13 @@ const nextConfig: NextConfig = {
 		"*.local-origin.dev",
 		"192.168.207.100",
 	],
+=======
+import withPayload from "@payloadcms/next/withPayload";
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+	/* config options here */
+>>>>>>> 80520a05d9b7d0ad5a74341d6f121a796f7fd8d4
 };
 
 export default withPayload(nextConfig);

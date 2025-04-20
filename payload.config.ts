@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 // storage-adapter-import-placeholder
@@ -33,5 +34,25 @@ export default buildConfig({
 	plugins: [
 		payloadCloudPlugin(),
 		// storage-adapter-placeholder
+=======
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
+import { buildConfig } from "payload";
+
+export default buildConfig({
+	secret: process.env.PAYLOAD_SECRET,
+	db: mongooseAdapter({
+		url: process.env.DATABASE_URI,
+	}),
+	collections: [
+		{
+			slug: "pages",
+			fields: [
+				{
+					name: "title",
+					type: "text",
+				},
+			],
+		},
+>>>>>>> 80520a05d9b7d0ad5a74341d6f121a796f7fd8d4
 	],
 });

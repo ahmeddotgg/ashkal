@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Header } from "@/components/shared/header";
 import { Wrapper } from "@/components/shared/wrapper";
 import { Button } from "@/components/ui/button";
@@ -78,6 +79,13 @@ export default function Home() {
 				</motion.ul>
 			</Wrapper>
 			{/* hero section end */}
+=======
+export default function Home() {
+	return (
+		<div>
+			<h1>hello world!</h1>
+			<p />
+>>>>>>> 80520a05d9b7d0ad5a74341d6f121a796f7fd8d4
 		</div>
 	);
 }
