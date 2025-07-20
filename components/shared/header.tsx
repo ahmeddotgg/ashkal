@@ -9,6 +9,7 @@ import { Wrapper } from "./wrapper";
 
 const tiny5 = Tiny5({
 	weight: "400",
+	subsets: ["latin"],
 });
 
 export function Header() {
