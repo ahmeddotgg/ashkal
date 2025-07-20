@@ -2,11 +2,8 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import "./globals.css";
-<<<<<<< HEAD
 import { Providers } from "@/components/shared/providers";
 import { cn } from "@/lib/utils";
-=======
->>>>>>> 80520a05d9b7d0ad5a74341d6f121a796f7fd8d4
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -20,15 +17,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
-<<<<<<< HEAD
 		<html lang="en" suppressHydrationWarning>
 			<body className={cn(geistSans.variable)}>
 				<Providers>{children}</Providers>
 			</body>
-=======
-		<html lang="en">
-			<body className={geistSans.variable}>{children}</body>
->>>>>>> 80520a05d9b7d0ad5a74341d6f121a796f7fd8d4
 		</html>
 	);
 }
